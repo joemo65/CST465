@@ -19,6 +19,16 @@
             <asp:ContentPlaceHolder ID="Body" runat="server">
             </asp:ContentPlaceHolder>
         </div>
+        <div>
+            <asp:SiteMapDataSource ID="uxSiteMap" StartingNodeUrl="~/Default.aspx" ShowStartingNode="false" runat="server"></asp:SiteMapDataSource>
+            <asp:Menu ID="uxSiteMenu" DataSourceID="uxSiteMap" Orientation="Horizontal" runat="server"></asp:Menu>
+        </div>
+        <div>
+
+        </div>
+        <footer>
+            <asp:SiteMapPath ID="uxSiteMapPath" PathSeparator="->" runat="server"></asp:SiteMapPath> 
+        </footer>
     </form>
 </body>
 </html>
