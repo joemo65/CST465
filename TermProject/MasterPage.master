@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="MasterPage" Codebehind="MasterPage.master.cs" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>CST 465 Final Project</title>
+    <asp:ContentPlaceHolder id="Stylesheets" runat="server">
+        <link rel="stylesheet" href="masterstyles.css" type="text/css"/>
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="uxMainForm" runat="server">
+        <div>
+            <asp:ContentPlaceHolder id="Header" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="Body" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
