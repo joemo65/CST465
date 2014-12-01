@@ -21,6 +21,15 @@ public partial class MasterPage {
     protected global::System.Web.UI.WebControls.ContentPlaceHolder Stylesheets;
     
     /// <summary>
+    /// Head control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.ContentPlaceHolder Head;
+    
+    /// <summary>
     /// uxMainForm control.
     /// </summary>
     /// <remarks>
@@ -28,15 +37,6 @@ public partial class MasterPage {
     /// To modify move field declaration from designer file to code-behind file.
     /// </remarks>
     protected global::System.Web.UI.HtmlControls.HtmlForm uxMainForm;
-    
-    /// <summary>
-    /// Header control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.ContentPlaceHolder Header;
     
     /// <summary>
     /// Body control.

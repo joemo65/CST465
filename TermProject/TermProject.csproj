@@ -57,6 +57,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\Account.aspx" />
+    <Content Include="Account\Logout.aspx" />
+    <Content Include="Admin\ManageUsers.aspx" />
+    <Content Include="CreateProfileTables.sql" />
+    <Content Include="Forum.aspx" />
+    <Content Include="Global.aspx" />
     <Content Include="MasterPage.master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -67,17 +74,11 @@
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
-    <Content Include="Account\Account.aspx" />
-    <Content Include="Account\Logout.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Account\EditProfilePage.aspx" />
-    <Content Include="Forum.aspx" />
-    <Content Include="Global.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="masterstyles.css" />
     <Content Include="Register.aspx" />
-    <Content Include="Tests.aspx" />
     <Content Include="Account\ViewProfilePage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -102,6 +103,13 @@
     </Compile>
     <Compile Include="Account\Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageUsers.aspx.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageUsers.aspx.designer.cs">
+      <DependentUpon>ManageUsers.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -153,13 +161,6 @@
     </Compile>
     <Compile Include="Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Tests.aspx.cs">
-      <DependentUpon>Tests.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Tests.aspx.designer.cs">
-      <DependentUpon>Tests.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\ViewProfilePage.aspx.cs">
       <DependentUpon>ViewProfilePage.aspx</DependentUpon>

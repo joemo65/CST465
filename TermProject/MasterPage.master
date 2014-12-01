@@ -8,13 +8,10 @@
     <asp:ContentPlaceHolder id="Stylesheets" runat="server">
         <link rel="stylesheet" href="masterstyles.css" type="text/css"/>
     </asp:ContentPlaceHolder>
+    <asp:ContentPlaceHolder ID="Head" runat="server"></asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="uxMainForm" runat="server">
-        <div>
-            <asp:ContentPlaceHolder id="Header" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
         <div>
             <asp:ContentPlaceHolder ID="Body" runat="server">
             </asp:ContentPlaceHolder>
