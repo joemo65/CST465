@@ -2,7 +2,7 @@
 
 <asp:Content ID="ContentStyle" ContentPlaceHolderID="Stylesheets" Runat="Server">
 </asp:Content>
-<asp:Content ID="ContentHeader" ContentPlaceHolderID="Header" Runat="Server">
+<asp:Content ID="ContentHeader" ContentPlaceHolderID="Head" Runat="Server">
         <h1>Edit Your Profile</h1>
 </asp:Content>
 <asp:Content ID="ContentProfileFields" ContentPlaceHolderID="Body" Runat="server">
