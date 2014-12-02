@@ -62,6 +62,7 @@
     <Content Include="Account\Logout.aspx" />
     <Content Include="Admin\ManageUsers.aspx" />
     <Content Include="CreateProfileTables.sql" />
+    <Content Include="Default.aspx" />
     <Content Include="Forum.aspx" />
     <Content Include="Global.aspx" />
     <Content Include="MasterPage.master" />
@@ -74,7 +75,6 @@
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.aspx" />
     <Content Include="Account\EditProfilePage.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="masterstyles.css" />
@@ -111,19 +111,19 @@
     <Compile Include="Admin\ManageUsers.aspx.designer.cs">
       <DependentUpon>ManageUsers.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Account\EditProfilePage.aspx.cs">
       <DependentUpon>EditProfilePage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Account\EditProfilePage.aspx.designer.cs">
       <DependentUpon>EditProfilePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Forum.aspx.cs">
       <DependentUpon>Forum.aspx</DependentUpon>

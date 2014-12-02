@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="Stylesheets" Runat="Server">
         <link rel="stylesheet" type="text/css" href="masterstyles.css" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="Header" Runat="Server">
+<asp:Content ID="Content2" ContentPlaceHolderID="Head" Runat="Server">
     <h1>View Your Profile</h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Body" Runat="Server">
