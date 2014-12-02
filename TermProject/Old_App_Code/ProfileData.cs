@@ -5,6 +5,7 @@ using System.Web;
 
 public class ProfileData
 {
+    public string UserID { get; set; }
     public string Name {get; set; }
     public string Email {get; set; }
     public string UserType {get; set; }
@@ -14,7 +15,7 @@ public class ProfileData
     public string CoursePrefix { get; set; }
     public string CourseNumber { get; set; }
     public string CourseDescription { get; set; }
-
+   
 	public ProfileData()
 	{
 	}

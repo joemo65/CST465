@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using TermProject.Old_App_Code;
 
 public partial class EditProfilePage : System.Web.UI.Page
 {
@@ -27,6 +29,8 @@ public partial class EditProfilePage : System.Web.UI.Page
             //put the data into the session to be access across the website
             SetSession();
 
+            //save to the database
+            ProfilePersistance.SaveProfile(data);
 
             //Redirect to the View Profile Page
             Response.Redirect("ViewProfilePage.aspx");
@@ -35,6 +39,7 @@ public partial class EditProfilePage : System.Web.UI.Page
 
     private void SetData()
     {
+        data.UserID = Membership.GetUser().ProviderUserKey.ToString();
         data.Name = uxNameTextBox.Text;
         data.Email = uxEmailTextBox.Text;
         data.UserType = uxUserTypeDropDownList.SelectedValue;
@@ -57,5 +62,6 @@ public partial class EditProfilePage : System.Web.UI.Page
         Session["CoursePrefix"] = data.CoursePrefix;
         Session["CourseNumber"] = data.CourseNumber;
         Session["CourseDescription"] = data.CourseDescription;
+        Session["UserId"] = data.UserID;
     }
 }

@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using TermProject.Old_App_Code;
 
 public partial class ViewProfilePage : System.Web.UI.Page
 {
@@ -12,14 +14,21 @@ public partial class ViewProfilePage : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         //get the data sent from the Session
-        GetData();
+        //GetData();
+
+        string id = Membership.GetUser().ProviderUserKey.ToString();
+
+        //get data from profile stored in database
+        data = ProfilePersistance.LoadProfile(id);
 
         //set the web interface with the saved data
         SetAllLabels();
     }
 
+    //out of date
     private void GetData()
     {
+        data.UserID = (string)Session["UserId"];
         data.Name = (string)Session["Name"];
         data.Email = (string)Session["Email"];
         data.UserType = (string)Session["UserType"];
