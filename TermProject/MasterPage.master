@@ -21,11 +21,15 @@
             <asp:Menu ID="uxSiteMenu" DataSourceID="uxSiteMap" Orientation="Horizontal" runat="server"></asp:Menu>
         </div>
         <div>
-
         </div>
         <footer>
             <asp:SiteMapPath ID="uxSiteMapPath" PathSeparator="->" runat="server"></asp:SiteMapPath> 
         </footer>
     </form>
+    <asp:ScriptManager ID="uxScriptMgr" runat="server">
+        <Scripts>
+            <asp:ScriptReference Path="~/jquery-1.11.1.js" />
+        </Scripts>
+    </asp:ScriptManager>
 </body>
 </html>

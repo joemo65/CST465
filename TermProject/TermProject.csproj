@@ -59,12 +59,16 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Account\Account.aspx" />
+    <Content Include="Account\Announcement.aspx" />
     <Content Include="Account\Logout.aspx" />
     <Content Include="Admin\ManageUsers.aspx" />
+    <Content Include="announcements.aspx" />
+    <Content Include="announcement.css" />
     <Content Include="CreateProfileTables.sql" />
     <Content Include="Default.aspx" />
     <Content Include="Forum.aspx" />
     <Content Include="Global.aspx" />
+    <Content Include="jquery-1.11.1.js" />
     <Content Include="MasterPage.master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -80,7 +84,9 @@
     <Content Include="masterstyles.css" />
     <Content Include="Register.aspx" />
     <Content Include="Account\ViewProfilePage.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.aspx.cs">
@@ -96,6 +102,13 @@
     </Compile>
     <Compile Include="Account\Account.aspx.designer.cs">
       <DependentUpon>Account.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Announcement.aspx.cs">
+      <DependentUpon>Announcement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Announcement.aspx.designer.cs">
+      <DependentUpon>Announcement.aspx</DependentUpon>
     </Compile>
     <Compile Include="Account\Logout.aspx.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
@@ -117,6 +130,13 @@
     </Compile>
     <Compile Include="Account\EditProfilePage.aspx.designer.cs">
       <DependentUpon>EditProfilePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="announcements.aspx.cs">
+      <DependentUpon>announcements.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="announcements.aspx.designer.cs">
+      <DependentUpon>announcements.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
