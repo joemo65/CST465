@@ -5,10 +5,14 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="Body" runat="server">
     <h1>announcement</h1>
-    <asp:FormView ID="uxFormView" runat="server">
-
+    <asp:FormView ID="uxFormView" DataSource="<%# Eval("userId") %>" runat="server">
+        <ItemTemplate>
+            <asp:TextBox ID="uxTitle" Text="<%# Eval("Title") %>" runat="server"></asp:TextBox>}
+            <br />
+            <asp:TextBox ID="uxBody" Text="<%# Eval("Body") %>" runat="server"></asp:TextBox>
+        </ItemTemplate>
     </asp:FormView>
-    <asp:GridView ID="uxGridView" runat="server">
-
+    <asp:GridView ID="uxGridView" DataSource="uxGridDataSource" runat="server">
     </asp:GridView>
+    <asp:SqlDataSource id="uxGridDataSource" SelectCommand="SELECT Comments FROM aspnet_announcements WHERE UserId=<%# Eval("UserId") %>" runat="server"></asp:SqlDataSource>
 </asp:Content>
